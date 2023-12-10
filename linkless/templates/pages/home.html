@@ -1,3 +1,65 @@
 {% extends "base.html" %}
 
 
+{% block content %}
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container-fluid">
+        <h1 class="fw-bolder">Welcome to Our Link Shortener Service</h1>
+        <p class="lead">Shorten links quickly, manage them efficiently, and track their performance.</p>
+    </div>
+</header>
+
+<section id="how-it-works" class="container-fluid mb-5">
+    <h2 class="fw-bolder mb-3">How It Works</h2>
+    <p>Enter a URL to shorten it instantly for easier sharing and tracking.</p>
+    <!-- Optionally, include a simple form here for immediate link shortening -->
+</section>
+
+<section id="features" class="container-fluid mb-5">
+    <h2 class="fw-bolder mb-3">Features</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Team Collaboration</h5>
+                    <p class="card-text">Work together with your team, share and manage links collectively.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Link Segregation</h5>
+                    <p class="card-text">Organize your links like Linktree, categorize them for different purposes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Analytics</h5>
+                    <p class="card-text">Track how your links perform with detailed analytics.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add other features here with additional cards -->
+    </div>
+</section>
+
+<section id="upcoming-features" class="container-fluid mb-5">
+    <h2 class="fw-bolder mb-3">Coming Soon</h2>
+    <ul class="list-unstyled">
+        <li class="mb-2">Enhanced analytics with geographic and demographic data.</li>
+        <li>Custom domains for your shortened links.</li>
+        <!-- Other planned features -->
+    </ul>
+</section>
+
+<footer class="py-5 bg-dark">
+    <div class="container-fluid text-white">
+        <p>Contact us for more information or to provide feedback.</p>
+        <!-- Include contact info or a contact form -->
+    </div>
+</footer>
+{% endblock %}
+
