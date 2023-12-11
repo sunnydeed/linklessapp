@@ -7,7 +7,7 @@ hiredis==2.2.3  # https://github.com/redis/hiredis-py
 celery==5.3.6  # pyup: < 6.0  # https://github.com/celery/celery
 django-celery-beat==2.5.0  # https://github.com/celery/django-celery-beat
 flower==2.0.1  # https://github.com/mher/flower
-
+libsass==0.22.0  #https://pypi.org/project/libsass/
 # Django
 # ------------------------------------------------------------------------------
 django==4.2.8  # pyup: < 5.0  # https://www.djangoproject.com/
@@ -17,3 +17,5 @@ django-allauth==0.58.2  # https://github.com/pennersr/django-allauth
 django-crispy-forms==2.1  # https://github.com/django-crispy-forms/django-crispy-forms
 crispy-bootstrap5==2023.10  # https://github.com/django-crispy-forms/crispy-bootstrap5
 django-redis==5.4.0  # https://github.com/jazzband/django-redis
+django-compressor==4.4 #https://django-compressor.readthedocs.io/en/latest/
+django-sass-processor==1.3 #https://github.com/jrief/django-sass-processor

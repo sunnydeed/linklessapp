@@ -77,6 +77,7 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "django_celery_beat",
+    "sass_processor",
 ]
 
 LOCAL_APPS = [
@@ -152,6 +153,7 @@ STATICFILES_DIRS = [str(APPS_DIR / "static")]
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "sass_processor.finders.CssFinder",
 ]
 
 # MEDIA
@@ -312,5 +314,7 @@ SOCIALACCOUNT_ADAPTER = "linkless.users.adapters.SocialAccountAdapter"
 SOCIALACCOUNT_FORMS = {"signup": "linkless.users.forms.UserSocialSignupForm"}
 
 
-# Your stuff...
+# SASS compiler config
 # ------------------------------------------------------------------------------
+SASS_PRECISION = 8
+SASS_PROCESSOR_ROOT = STATIC_ROOT

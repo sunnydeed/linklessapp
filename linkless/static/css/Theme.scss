@@ -1,0 +1,9 @@
+// Define your color scheme
+$primary: #38023b; // Used for primary buttons and links
+$secondary: #a288e3; // Used for secondary buttons and contextual backgrounds
+$info: #bbd5ed; // Used for informational alerts and badges
+$light: #cefdff; // Used for light backgrounds and borders
+$success: #ccffcb; // Used for success states like alerts and text
+
+// Import Bootstrap’s source files after defining custom variables
+@import "linkless/static/bootstrap/scss/bootstrap";
