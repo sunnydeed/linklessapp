@@ -120,6 +120,9 @@
             {# URL provided by django-allauth/account/urls.py #}
             <a class="nav-link" href="{% url 'account_logout' %}">{% translate "Sign Out" %}</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'shortener:shorten_link' %}">Shorten Link</a>
+          </li>
         {% else %}
           {% if ACCOUNT_ALLOW_REGISTRATION %}
             <li class="nav-item">
@@ -148,7 +151,7 @@
       {% endfor %}
     {% endif %}
     {% block content %}
-      <p>Use this document as a way to quick start any new project.</p>
+      
     {% endblock content %}
   </div>
   <!-- /container -->
